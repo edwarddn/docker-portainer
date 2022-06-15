@@ -1,6 +1,4 @@
-# Docker Portainer
-
-## Portainer docker-compose
+# Portainer docker-compose
 
 ### Requirements
 
