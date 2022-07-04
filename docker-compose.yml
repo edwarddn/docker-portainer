@@ -6,12 +6,11 @@ volumes:
 services:
   portainer:
     container_name: "portainer"
-    image: portainer/portainer-ce
+    image: portainer/portainer-ce:latest
     restart: always
-    command: -H unix:///var/run/docker.sock
     ports:
       - "9000:9000"
       - "8000:8000"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock 
       - portainer_data:/data
